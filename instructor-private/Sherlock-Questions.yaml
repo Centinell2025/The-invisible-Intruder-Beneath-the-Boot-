@@ -1,0 +1,149 @@
+# INSTRUCTOR ONLY — candidate answers pending blind-playtest
+scenario: >
+  Northbridge Systems, a fictional organization, detected unusual remote activity,
+  scheduled-task persistence, log disruption, and recovery-anchor anomalies.
+  Investigate synthetic host, network, file-access, and boot-observation artifacts.
+description: >
+  Correlate timestamps and event lineage to reconstruct the intrusion. Distinguish
+  supported observations from unproven exfiltration and firmware-compromise claims.
+questions:
+  - number: 1
+    type: free
+    title: "What is the normalized UTC timestamp of the suspicious remote logon?"
+    flag: "2026-09-18T01:42:00Z"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 2
+    type: free
+    title: "Which LogonId identifies the suspicious remote session?"
+    flag: "0x8d32"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 3
+    type: free
+    title: "Which process record is the parent of PROC-701?"
+    flag: "PROC-700"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 4
+    type: free
+    title: "What is the full path of the scheduled task created and invoked during the intrusion?"
+    flag: "\\Microsoft\\Windows\\Maintenance\\CacheHealth"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 5
+    type: free
+    title: "Was the suspicious scheduled task authorized under CHG-802?"
+    flag: "NO"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 6
+    type: free
+    title: "Which record identifies the earliest suspicious remote-management process?"
+    flag: "PROC-700"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 7
+    type: free
+    title: "Which account links the remote logon, script execution, and scheduled task?"
+    flag: "NORTHBRIDGE\\svc_update"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 8
+    type: free
+    title: "Which process record is associated with the TaskScheduler log-clear action?"
+    flag: "PROC-704"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 9
+    type: free
+    title: "Which Windows Security event ID indicates the Security log was cleared?"
+    flag: "1102"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 10
+    type: free
+    title: "How many minutes elapsed between the remote logon and scheduled task creation?"
+    flag: "10"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 11
+    type: free
+    title: "Which outbound network flow first matches the suspicious resolved destination?"
+    flag: "FLOW-501"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 12
+    type: free
+    title: "What is the combined outbound byte count for FLOW-501 and FLOW-502?"
+    flag: "267396"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 13
+    type: free
+    title: "What is the FLOW-502 to FLOW-501 byte ratio, rounded to two decimal places?"
+    flag: "12.87"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 14
+    type: free
+    title: "Which UNC file path was accessed on FS-01?"
+    flag: "\\\\FS-01\\Operations\\quarterly-recovery-plan.pdf"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 15
+    type: free
+    title: "How many minutes elapsed between the remote logon and the FS-01 file access?"
+    flag: "61"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 16
+    type: free
+    title: "Which record first shows the recovery-anchor measurement change?"
+    flag: "BOOT-202"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 17
+    type: free
+    title: "What is the observed PCR7 digest in the changed measurement record?"
+    flag: "5f7b2a11"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 18
+    type: free
+    title: "Was a cryptographically verified hardware TPM quote acquired?"
+    flag: "NO"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 19
+    type: free
+    title: "Does the available evidence confirm file-content exfiltration?"
+    flag: "NO"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
+  - number: 20
+    type: free
+    title: "How should firmware compromise be classified on the available evidence?"
+    flag: "UNPROVEN"
+    answer_case_sensitive: false
+    placeholder: "Enter your answer"
+    requires: null
