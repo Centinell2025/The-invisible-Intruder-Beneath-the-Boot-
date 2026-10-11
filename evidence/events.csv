@@ -35,7 +35,7 @@ record_id,timestamp_utc,source,host,event_type,details
 "EV-035","2026-09-17T02:45:00Z","forensic-review","NB-WS-014","request","request independent SecureBoot acquisition"
 "EV-036","2026-09-17T02:46:00Z","forensic-review","NB-WS-014","request","request verified TPM quote with nonce"
 "EV-037","2026-09-17T02:47:00Z","forensic-review","NB-WS-014","request","request firmware image if legally authorized"
-"EV-038","2026-09-17T02:48:00Z","auth-directory","NB-WS-014","session","nb-maint session ended"
+"EV-038","2026-09-17T02:48:00Z","auth-directory","NB-WS-014","session","02:48 UTC nb-maint session ended"
 "EV-010","2026-09-17T02:49:00Z","forensic-review","NB-WS-014","limitation","no firmware image or verified TPM quote acquired"
 "EV-039","2026-09-17T02:51:00Z","forensic-review","NB-WS-014","conclusion","observed discrepancy does not establish malicious actor"
 "EV-040","2026-09-17T02:55:00Z","change-control","NB-WS-014","closure","CHG-2048 marked pending security review"
