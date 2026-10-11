@@ -62,3 +62,7 @@ For a role-based navigation guide, evidence-handling requirements, scope limitat
 ## Packaging verification
 
 Before delivering the archive, run the [student package validator](tools/validate_student_package.py) and follow the [repeatable packaging procedure](PACKAGE_VALIDATION.md). The validator checks ZIP structure and filenames; with the password supplied locally it also verifies the internal SHA-256 manifest. An incomplete run is not a passing release check.
+
+## Reproducibility protocol
+
+Use the [Reproducible Investigation Protocol](REPRODUCIBILITY_PROTOCOL.md) for deterministic evidence inventory, clock normalization, record-level citations and blind-solve acceptance criteria. An empty [20-question answer trace template](ANSWER_TRACE_TEMPLATE.csv) is provided; completed answers must remain private. **Publication of the protocol does not establish that all 20 answers have been independently reproduced.**
