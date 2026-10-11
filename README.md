@@ -54,3 +54,7 @@ This is a **fictional, synthetic, defensive training exercise**. It grants no au
 **Uso ético y educativo:** Este ejercicio ficticio y simulado se ofrece exclusivamente para formación defensiva autorizada. No autoriza pruebas ni accesos a sistemas de terceros sin permiso expreso.
 
 See [Educational Purpose Notice](EDUCATIONAL_PURPOSE_NOTICE.md). The project does not claim endorsement, acceptance or affiliation with Hack The Box.
+
+## Documentation index
+
+For a role-based navigation guide, evidence-handling requirements, scope limitations and release boundaries, see **[Documentation Index](DOCUMENTATION_INDEX.md)**. The index separates student, reviewer and release-manager instructions and records the remaining validation tasks.
