@@ -58,3 +58,7 @@ See [Educational Purpose Notice](EDUCATIONAL_PURPOSE_NOTICE.md). The project doe
 ## Documentation index
 
 For a role-based navigation guide, evidence-handling requirements, scope limitations and release boundaries, see **[Documentation Index](DOCUMENTATION_INDEX.md)**. The index separates student, reviewer and release-manager instructions and records the remaining validation tasks.
+
+## Packaging verification
+
+Before delivering the archive, run the [student package validator](tools/validate_student_package.py) and follow the [repeatable packaging procedure](PACKAGE_VALIDATION.md). The validator checks ZIP structure and filenames; with the password supplied locally it also verifies the internal SHA-256 manifest. An incomplete run is not a passing release check.
