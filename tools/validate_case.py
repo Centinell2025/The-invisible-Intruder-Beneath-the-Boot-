@@ -25,7 +25,11 @@ assert all('CoreShield' not in str(r) for r in rows), 'Protected module referenc
 questions=(root/'student/QUESTIONS.md').read_text(encoding='utf-8')
 assert len(re.findall(r'^\\d+\\. ',questions,re.M))==20, 'Question count mismatch'
 key=(root/'instructor/ANSWER_KEY.md').read_text(encoding='utf-8')
-entries=re.findall(r'^\\| (\\d+) \\| \\x60([^\\x60]+)\\x60 \\| (EV-\\d{3}) \\|$',key,re.M)
+entries=[]
+for line in key.splitlines():
+    cells=[cell.strip() for cell in line.strip().split('|')]
+    if len(cells)==5 and cells[1].isdigit() and cells[2].startswith('`'):
+        entries.append((cells[1], cells[2].strip('`'), cells[3]))
 assert len(entries)==20, 'Answer key must contain 20 mappings'
 assert [int(x[0]) for x in entries]==list(range(1,21)), 'Question numbers do not align'
 lookup={r['record_id']:r['details'] for r in rows}
