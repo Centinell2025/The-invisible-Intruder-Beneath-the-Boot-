@@ -66,3 +66,7 @@ Before delivering the archive, run the [student package validator](tools/validat
 ## Reproducibility protocol
 
 Use the [Reproducible Investigation Protocol](REPRODUCIBILITY_PROTOCOL.md) for deterministic evidence inventory, clock normalization, record-level citations and blind-solve acceptance criteria. An empty [20-question answer trace template](ANSWER_TRACE_TEMPLATE.csv) is provided; completed answers must remain private. **Publication of the protocol does not establish that all 20 answers have been independently reproduced.**
+
+## Repeatable offline investigation checks
+
+Follow the [Executable Reproducibility Runbook](REPRODUCIBILITY_RUNBOOK.md). It includes a [deterministic evidence inventory tool](tools/build_evidence_inventory.py) and a [20-question private trace checker](tools/check_answer_trace.py). These tools document and check repeatability without publishing answers; they do not replace an independent blind solve.
