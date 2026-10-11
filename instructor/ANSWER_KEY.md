@@ -1,19 +1,28 @@
-# RESTRICTED — Instructor / reviewer only
-Do not distribute with student ZIP or publicly expose.
+# RESTRICTED — instructor only
 
-This **draft** sample supports Q1–Q12 and Q15–Q20 only partially; Q13–Q14 require explicit normalization context and the full Insane case needs additional sources. Reviewer must verify each prompt against raw artifacts before publishing.
+**Do not ship this file to students.** Answers verified against the synthetic events fixture by exact detail phrase. Not a complete Insane walkthrough.
 
-Reference observations:
-- Host: NB-WS-014 (EV-001 onward)
-- Date: 2026-09-17 UTC
-- Approved ticket: CHG-2048; window 02:00–03:00 UTC (EV-001)
-- Account: nb-maint (EV-002)
-- Boot discrepancy: EV-004; baseline enabled (EV-003); observed disabled (EV-004)
-- PCR7 is simulated, not a hardware attestation (EV-005)
-- Offset: +120 seconds (EV-008)
-- Connection: 192.0.2.14 -> 198.51.100.27:443 (EV-007); attribution not established
-- Maintenance permits OS servicing only, no firmware flash (EV-009)
-- No firmware image or verified TPM quote was acquired (EV-010)
-- **Defensible conclusion:** boot-state discrepancy is evidenced, but malicious firmware modification is **not proven**.
+| Q | Answer | Record |
+|---|---|---|
+| 1 | `NB-WS-014` | EV-011 |
+| 2 | `CHG-2048` | EV-001 |
+| 3 | `02:00` | EV-001 |
+| 4 | `nb-maint` | EV-002 |
+| 5 | `KB-7721` | EV-012 |
+| 6 | `BSL-009` | EV-003 |
+| 7 | `enabled` | EV-003 |
+| 8 | `OBS-017` | EV-004 |
+| 9 | `disabled` | EV-004 |
+| 10 | `ALERT-711` | EV-006 |
+| 11 | `PCR7` | EV-005 |
+| 12 | `+120` | EV-008 |
+| 13 | `COL-02` | EV-031 |
+| 14 | `FLOW-071` | EV-030 |
+| 15 | `443` | EV-007 |
+| 16 | `CHG-2048` | EV-021 |
+| 17 | `no` | EV-010 |
+| 18 | `no` | EV-032 |
+| 19 | `verified TPM quote with nonce` | EV-036 |
+| 20 | `02:48` | EV-038 |
 
-Avoid giving speculative attacker identities, payload hashes, or unobserved commands as answers.
+**Limitations:** The source logs are generated simulations; no verified TPM quote, firmware image, real malware, or real-world compromise is provided. Clock offset is a measured *host-local* offset, while all CSV timestamps are UTC collector-normalized; do not apply the offset again to the CSV column.
