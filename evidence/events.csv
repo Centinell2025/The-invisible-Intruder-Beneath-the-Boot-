@@ -1,0 +1,11 @@
+record_id,timestamp_utc,source,host,event_type,details
+EV-001,2026-09-17T01:50:00Z,change-control,NB-WS-014,approval,CHG-2048 approved maintenance 02:00-03:00 UTC by nb-maint
+EV-002,2026-09-17T02:05:00Z,windows-security,NB-WS-014,logon,nb-maint interactive maintenance logon
+EV-003,2026-09-17T02:14:00Z,boot-inventory,NB-WS-014,baseline,SecureBoot enabled baseline capture BSL-009
+EV-004,2026-09-17T02:31:00Z,boot-inventory,NB-WS-014,observation,SecureBoot disabled observation OBS-017; cause not established
+EV-005,2026-09-17T02:33:00Z,tpm-simulation,NB-WS-014,pcr-observation,PCR7 measurement simulated; not a hardware attestation
+EV-006,2026-09-17T02:35:00Z,endpoint-alert,NB-WS-014,integrity-alert,ALERT-711 unexpected boot-policy change
+EV-007,2026-09-17T02:37:00Z,network-flow,NB-WS-014,connection,192.0.2.14 to 198.51.100.27:443 observed; no payload capture
+EV-008,2026-09-17T02:39:00Z,time-sync,NB-WS-014,clock-offset,host clock measured +120 seconds relative to reference
+EV-009,2026-09-17T02:41:00Z,change-control,NB-WS-014,change-scope,CHG-2048 permits OS servicing only; no firmware flash approved
+EV-010,2026-09-17T02:49:00Z,forensic-review,NB-WS-014,limitation,no firmware image or verified TPM quote acquired
