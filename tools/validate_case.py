@@ -23,7 +23,7 @@ for r in rows:
 assert times==sorted(times), 'CSV timeline out of order'
 assert all('CoreShield' not in str(r) for r in rows), 'Protected module reference in fixture'
 questions=(root/'student/QUESTIONS.md').read_text(encoding='utf-8')
-assert len(re.findall(r'^\\d+\\. ',questions,re.M))==20, 'Question count mismatch'
+assert sum(line.split('. ',1)[0].isdigit() for line in questions.splitlines() if '. ' in line)==20, 'Question count mismatch'
 key=(root/'instructor/ANSWER_KEY.md').read_text(encoding='utf-8')
 entries=[]
 for line in key.splitlines():
